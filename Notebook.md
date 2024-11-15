@@ -1,8 +1,8 @@
 # 📑 MỤC LỤC
-- [Mục 1: ESXi](#mục-1-esxi) 
-- [Mục 2: Ubuntu Linux](#mục-2-ubuntu-linux)
-- [Mục 3: Docker](#mục-3-docker) 
-- [Mục 4: Kubernetes](#mục-4-kubernetes) 
+- [Mục 1: ESXi](#-mục-1-esxi) 
+- [Mục 2: Ubuntu Linux](#-mục-2-ubuntu-linux)
+- [Mục 3: Docker](#-mục-3-docker) 
+- [Mục 4: Kubernetes](#-mục-4-kubernetes) 
 
 ## 🖳 Mục 1: ESXi
 ### 1.1. Các lỗi ESXi:
@@ -33,7 +33,7 @@ resize2fs /dev/mapper/ubuntu--vg-ubuntu--lv
 truncate -s 0 /var/lib/docker/containers/**/*-json.log
 ```
 
-## 🐳 MỤC 3: Docker
+## 🐳 Mục 3: Docker
 ### 3.1. Cài đặt:
 `curl -fsSL https://get.docker.com | sh`
 
@@ -53,7 +53,7 @@ COPY --from=build /app/publish/* .
 ENTRYPOINT ["dotnet", "jhipster.dll"]
 ```
 
-## ☸️ MỤC 4: Kubernetes
+## ☸️ Mục 4: Kubernetes
 ### 4.1. Cài đặt: 
 #### 4.1.1. Cài Dependencies:
 ```
