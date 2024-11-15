@@ -28,10 +28,8 @@ lvextend -l +100%FREE /dev/ubuntu-vg/ubuntu-lv
 resize2fs /dev/mapper/ubuntu--vg-ubuntu--lv
 ```
 
-### 2.2. Xóa log docker logs:
-```
-truncate -s 0 /var/lib/docker/containers/**/*-json.log
-```
+### 2.2. Xóa log của lệnh docker logs:
+`truncate -s 0 /var/lib/docker/containers/**/*-json.log`
 
 ## 🐳 Mục 3: Docker
 ### 3.1. Cài đặt:
