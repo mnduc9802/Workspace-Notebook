@@ -2,7 +2,7 @@
 - [Mục 1: ESXi](#-mục-1-esxi) 
 - [Mục 2: Ubuntu Linux](#-mục-2-ubuntu-linux)
 - [Mục 3: Docker](#-mục-3-docker) 
-- [Mục 4: Kubernetes](#-mục-4-kubernetes) 
+- [Mục 4: Kubernetes](#%EF%B8%8F-mục-4-kubernetes) 
 
 ## 🖳 Mục 1: ESXi
 ### 1.1. Các lỗi ESXi:
