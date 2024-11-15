@@ -1,10 +1,10 @@
-# MỤC LỤC 📑
-- [Mục 1: ESXi](#mục-1-esxi-) 
-- [Mục 2: Ubuntu Linux](#mục-2-ubuntu-linux-)
-- [Mục 3: Docker](#mục-3-docker-) 
-- [Mục 4: Kubernetes](#mục-4-kubernetes-) 
+# 📑 MỤC LỤC
+- [Mục 1: ESXi](#-mục-1-esxi) 
+- [Mục 2: Ubuntu Linux](#-mục-2-ubuntu-linux)
+- [Mục 3: Docker](#-mục-3-docker) 
+- [Mục 4: Kubernetes](#%EF%B8%8F-mục-4-kubernetes) 
 
-## Mục 1: ESXi 🖳
+## 🖳 Mục 1: ESXi
 ### 1.1. Các lỗi ESXi:
 1. Lỗi Kernel - do phần cứng bị thay đổi (Thay đổi Fan Speed, config trên ESXi,...)
     
@@ -18,7 +18,7 @@
 
     Vào Host > Actions chọn Exit maintainance mode
 
-## Mục 2: Ubuntu Linux 🐧
+## 🐧 Mục 2: Ubuntu Linux
 ### 2.1. Tăng Disk Ubuntu:
 ```
 echo 1>/sys/class/block/sda/device/rescan
@@ -33,7 +33,7 @@ resize2fs /dev/mapper/ubuntu--vg-ubuntu--lv
 truncate -s 0 /var/lib/docker/containers/**/*-json.log
 ```
 
-## Mục 3: Docker 🐳
+## 🐳 Mục 3: Docker
 ### 3.1. Cài đặt:
 `curl -fsSL https://get.docker.com | sh`
 
@@ -53,7 +53,7 @@ COPY --from=build /app/publish/* .
 ENTRYPOINT ["dotnet", "jhipster.dll"]
 ```
 
-## Mục 4: Kubernetes ☸️
+## ☸️ Mục 4: Kubernetes
 ### 4.1. Cài đặt: 
 #### 4.1.1. Cài Dependencies:
 ```
