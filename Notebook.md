@@ -31,6 +31,38 @@ resize2fs /dev/mapper/ubuntu--vg-ubuntu--lv
 ### 2.2. Xóa log của lệnh docker logs:
 `truncate -s 0 /var/lib/docker/containers/**/*-json.log`
 
+### 2.3. Cài đặt NVIDIA GPU Driver:
+#### 2.3.1. Xóa tất cả Driver cũ:
+```
+sudo apt-get purge nvidia-*
+sudo apt-get update
+sudo apt-get autoremove
+```
+
+#### 2.3.2. Tìm kiếm Driver khả dụng:
+`apt search nvidia-driver`
+
+#### 2.3.3. Cài Dependencies (tùy chọn):
+```
+sudo apt install libnvidia-common-470
+sudo apt install libnividia-gl-470
+```
+
+#### 2.3.4. Cài đặt NVIDIA GPU Driver:
+`sudo apt install nvidia-driver-470`
+
+> Trong khi cài đặt Driver, Ubuntu Linux sẽ yêu cầu nhập mật khẩu khi process được khoảng 90%
+
+#### 2.3.5. Reboot VM:
+1. Chọn tùy chọn Enroll MOK
+![Chọn MOK](./images/reboot-option1.png)
+
+2. Chọn Continue
+![Chọn Continue](./images/reboot-option2.png)
+
+#### 2.3.6. Kiểm tra:
+`nvidia-smi`
+
 ## 🐳 Mục 3: Docker
 ### 3.1. Cài đặt:
 `curl -fsSL https://get.docker.com | sh`
