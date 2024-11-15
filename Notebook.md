@@ -2,6 +2,7 @@
 - [Mục 1: ESXi](#mục-1-esxi) 
 - [Mục 2: Ubuntu Linux](#mục-2-ubuntu-linux)
 - [Mục 3: Docker](#mục-3-docker) 
+- [Mục 4: Kubernetes](#mục-4-kubernetes) 
 
 ## 🖳 Mục 1: ESXi
 ### 1.1. Các lỗi ESXi:
@@ -52,4 +53,20 @@ COPY --from=build /app/publish/* .
 ENTRYPOINT ["dotnet", "jhipster.dll"]
 ```
 
-### 
+## ☸️ MỤC 4: Kubernetes
+### 4.1. Cài đặt: 
+#### 4.1.1. Cài Dependencies:
+```
+apt install -y socat
+apt install -y conntrack
+apt install -y ebtables
+apt install -y ipset
+```
+
+#### 4.1.2. Cài Kubernetes:
+```
+curl -sfL https://get-kk.kubesphere.io | VERSION=v3.1.6 sh -
+./kk create config --with-kubernetes v1.31.0
+vi config-sample.yaml
+./kk create cluster -f config-sample.yaml
+```
